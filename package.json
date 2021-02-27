@@ -1,0 +1,46 @@
+{
+  "name": "sanity-plugin-gpx",
+  "version": "1.0.0",
+  "main": "lib/gpxInput.js",
+  "author": "Andrew Grant <andrew@aadgrant.co.uk>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "babel src --copy-files --out-dir lib --watch",
+    "prepublishOnly": "npm run clean && babel src --copy-files --out-dir lib",
+    "clean": "rimraf lib"
+  },
+  "keywords": [
+    "sanity",
+    "sanity-plugin"
+  ],
+  "peerDependencies": {
+    "@sanity/base": ">=2.0.9",
+    "@sanity/components": ">=2.0.9",
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8"
+  },
+  "dependencies": {
+    "gpx-parser-builder": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@sanity/base": "2.0.9",
+    "@sanity/components": "2.0.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.20.0",
+    "eslint-config-sanity": "^5.1.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "lodash": "^4.17.21",
+    "react": ">= 16.8",
+    "react-dom": ">= 16.8",
+    "rimraf": "^3.0.2",
+    "swr": "^0.4.2"
+  }
+}
